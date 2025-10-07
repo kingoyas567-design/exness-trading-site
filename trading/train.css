@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+
+}
+
+
+.generalDiv {
+    background-color: #f7f7f9;
+}
+
+.overalldiv {
+    display: flex;
+  
+}
+
+.flex {
+    display: flex;
+}
+
+
+ul {
+    display: flex;
+    gap: 5rem;
+    margin-top: 30.1px;
+    list-style: none;
+
+}
+
+
+ul li {
+    text-decoration: none;
+    
+
+}
+
+ul li a {
+    
+    text-decoration: none;
+    color: black;
+}
+
+.buttonFlex {
+    margin-top: 10px;
+    margin-left: 20rem;
+}
+
+.reg {
+    color: black;
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 15px;
+    width: 8rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+.signIn {
+    padding: 15.3px;
+    width: 8rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+.header-flex {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.body-flex {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+
+.button-Flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.reg-2 {
+    color: black;
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 15px;
+    width: 8rem;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: sans-serif;
+    
+}
+
+
+.demo {
+    background-color: #e9eced;
+    border-radius: 10px;
+    width: 8rem;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.underline  {
+   margin-top: 120;
+   margin-left: 200;
+    border: solid 1px rgb(227, 222, 222);
+    width: 70rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer {
+    margin: 5 5;
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: center; */
+    
+}
+
+
+.second-body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+
+.third-body {
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.overalldiv2 {
+    background-color: darkblue;
+}
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode button {
+  background-color: #333;
+  color: white;
+}
