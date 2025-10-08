@@ -1,0 +1,47 @@
+.add {
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.count {
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+
+.minus{
+    font-size: 100px;
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+

@@ -1,0 +1,730 @@
+
+/* Base Reset */
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+    font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* prevent horizontal scroll */
+  background-color  #f7f7f9;
+}
+
+/* General Container */
+.generalDiv {
+  background-color:  #f7f7f9;
+}
+span {
+  
+  }
+
+
+/* Header Container */
+.overallDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+   position: fixed;       /* or sticky */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f7f7f9;;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px; /* fixed header height */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optional shadow */
+}
+
+/* Navigation */
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.flex ul {
+  display: flex;
+  gap: 3rem;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.flex ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.flex ul li a:hover {
+  color: darkblue;
+}
+
+
+/* Header Buttons */
+.buttonFlex {
+display: flex;
+  align-items: center;
+  gap: 15px;         /* space between Register & Moon */
+  margin-right: 35px; /* keep both away from the far-right edge */
+
+
+ 
+}
+.signIn  {
+ margin-left: -10rem;
+  
+  }
+  
+.reg  {
+ margin-left: -10rem;
+  
+  }
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.reg, .reg-2 {
+  background-color: yellow;
+  color: black;
+}
+
+.signIn, .demo {
+  background-color: #e9eced;
+  color: black;
+}
+
+/* Header Section */
+.header-flex {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  text-align: center;
+  /* margin: 40px 0; */
+    margin-top: 200px;  /* match header height + extra space */
+    background-color: #f7f7f9;
+    padding: 10px 60px;
+}
+
+/* Body Text */
+.body-flex {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* CTA Button Section */
+.button-Flex {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 20px 0;
+}
+
+/* Divider */
+.underline {
+  margin: 40px auto;
+  border: 1px solid rgb(227, 222, 222);
+  width: 80%;
+ 
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: -50px
+  
+}
+
+#news {
+  font-size: 20px;
+  margin-top: -10px; 
+  text-align: center; /* optional */
+  font-weight: bold;
+}
+
+
+/* Sections */
+.second-body {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px 20px;
+  text-align: center;
+  
+  
+   
+}
+
+.third-body {
+  background-color: #FFEA00;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Extra Section */
+.overallDiv2 {
+  background-color: darkblue;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode button {
+  background-color: #333;
+  color: white;
+}
+#darkModeToggle {
+  background: none;      /* no background */
+  border: 1px solid #c5c1c1; /* light border to match style */
+  font-size: 1.2rem;     /* decent size for the icon */
+  cursor: pointer;
+  border-radius: 50%;    /* makes it a neat circle */
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#darkModeToggle:hover {
+  background-color: #ccc;
+}
+
+/* Dark mode general */
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Dark mode header */
+.dark-mode .overallDiv {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Dark mode for buttons */
+.dark-mode button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+/* Dark mode for links */
+.dark-mode a {
+  color: #f1f1f1;
+}
+
+/* Dark mode for inputs, if any */
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #555;
+}
+/* Dark mode hero section */
+.dark-mode .hero {
+  background-color: #121212; /* match dark background */
+  color: #f1f1f1;
+}
+.dark-mode .header-flex {
+    background-color: #121212; /* match dark background */
+  color: #f1f1f1;
+    }
+
+    .dark-mode .body-flex  {
+       background-color: #121212; /* match dark background */
+  color: #f1f1f1;
+
+      }
+      .dark-mode .button-Flex .footer .body .underline .body-flex  {
+               background-color: #121212; /* match dark background */
+  color: #f1f1f1;
+
+        }
+        .dark-mode .generalDiv {
+  background-color: #1e1e1e; /* or match #121212 */
+}
+
+.dark-mode .underline {
+  border-color: #444;
+}
+.dark-mode .tools-container {
+  color: #dcdcdc; /* Slightly lighter than #f1f1f1 */
+}
+.dark-mode .tools-title {
+  color: #dcdcdc; /* Slightly lighter than #f1f1f1 */
+}
+.dark-mode .tools-grid {
+  color: #dcdcdc; /* Slightly lighter than #f1f1f1 */
+}
+.dark-mode .tools-subtext {
+  color: #dcdcdc; /* Slightly lighter than #f1f1f1 */
+}
+.dark-mode .advanced-charting,
+.dark-mode .live-prices,
+.dark-mode .calculator,
+.dark-mode .currency-rates {
+  color: #f1f1f1;
+}
+.dark-mode .features-section {
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.dark-mode .features-section .feature ul {
+  color: #f1f1f1;
+  margin-bottom: 10px;
+}
+
+
+
+ 
+
+/* Modal base */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  animation: fadeIn .3s ease;
+}
+
+/* Close button */
+#closeModal {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal input {
+  width: 90%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.modal button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background:  #FFFF00;
+
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background:  #000000;
+
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;   /* black background */
+  color: white;
+  padding: 4rem 8rem;       /* spacing around content */
+  .hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* pushes text and image apart */
+  background-color: #000;
+  color: white;
+  padding: 4rem 8rem;
+}
+
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.hero-image img {
+  max-width: 350px;
+  height: auto;
+  display: block;
+ border-radius: 50px;
+}
+
+bodys {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+.currency {
+  display: flex;
+  justify-content: space-between; /* spreads buttons across full width */
+  margin: 20px 0;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.currency .btn,
+.balance .btn {
+  flex: 1;                  /* each button takes equal width */
+  margin: 0 5px;            /* small spacing */
+  padding: 14px 20px;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #f7f7f7;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+.currency .btn:hover,
+.balance .btn:hover {
+  background: #eaeaea;
+}
+
+.currency .btn.active,
+.balance .btn.active {
+  background: #FFD700;
+  color: white;
+  border-color: #FFD700;
+}
+
+.tools-container {
+  margin: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.tools-title {
+  font-size: 3.5rem;   /* bigger title */
+   font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.tools-subtext {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 30px;
+   font-weight: bold; 
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.tool {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background: #f9f9f9;
+  font-size: 1.1rem;   /* bigger text inside */
+}
+
+.tool h3 {
+  margin-bottom: 10px;
+  color: #007bff;
+  font-size: 1.3rem;
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 40px;
+}
+
+
+#alertBar.close-btn {
+  float: right;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.calculator {
+  width: 250px;
+  margin: auto;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  background: #f9f9f9;
+}
+
+#display {
+  width: 100%;
+  height: 200px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.operator {
+  background: #ffa500;
+  color: white;
+}
+
+button.equal {
+  background: #28a745;
+  color: white;
+}
+
+button.clear {
+  grid-column: span 4;
+  background: #dc3545;
+  color: white;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  text-align: left;  /* default: left aligned */
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.prices {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: auto;
+}
+
+.prices ul {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  text-align: left;
+}
+
+.prices li {
+  margin: 12px 0;
+}
+
+/* Shared styles */
+/* .tool {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tool:hover {
+  transform: translateY(-5px);
+} */
+
+/* Unique styles */
+/* .calculator img { width: 60px; filter: hue-rotate(200deg); }
+.clock img { width: 55px; filter: grayscale(50%); }
+.coin img { width: 65px; filter: brightness(1.2); } */
+/* Trading Tools Section */
+.trading-tools {
+  background: #000; /* black background */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.trading-tools h2 {
+  color: #FFD700; /* yellow heading */
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.tools-grids {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  
+}
+
+.tool {
+  background: #111; /* dark card */
+  padding: 20px;
+  border: 2px solid #FFD700;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.tool h3 {
+  color: #FFD700;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.tool p {
+  color: #FFD700;
+  font-size: 0.9rem;
+}
+
+.tool:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #FFD700;
+}
+.features  {
+ color: yellow;
+
+  }
+
+  .broker-banner {
+  background-color: #111;
+  color: yellow;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.broker-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 12px;
+  font-size: 40px;
+}
+
+.register-btn {
+  background-color: yellow;
+  color: black;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #f5c518;
+}
+
+.broker-note {
+  font-size: 15px;
+  color: #ddd;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.broker-note strong {
+  color: yellow;
+}
+
+* main
+  remotes/origin/main
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+.display-bg {
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 40px;
+
+
+}
+
+.display-code {
+    border: 2px solid black;
+    height: 50px;
+    width: 200px;
+    margin-top: 40px;
+    border-radius: 10px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.generate {
+    margin-top: 40px;
+    margin-left: 60px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: green;
+    color: white;
+
+
+}
+
+.overall {
+    margin-left: 40rem;
+    font-family: sans-serif;
+}
